@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #222222;
+    --muted: #f5f5f5;
+    --muted-foreground: #666666;
+    --popover: #ffffff;
+    --popover-foreground: #222222;
+    --border: #dddddd;
+    --input: #dddddd;
+    --card: #ffffff;
+    --card-foreground: #222222;
+    --primary: #c8281e;
+    --primary-foreground: #ffffff;
+    --secondary: #f5f5f5;
+    --secondary-foreground: #222222;
+    --accent: #f5f5f5;
+    --accent-foreground: #222222;
+    --destructive: #c8281e;
+    --destructive-foreground: #ffffff;
+    --ring: #1a6fa8;
+    --radius: 0.3rem;
+  }
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* TipTap Editor base styles */
+.tiptap-container .tiptap {
+  outline: none;
+  min-height: 120px;
+}
+
+.tiptap p {
+  margin-bottom: 0.75em;
+  color: #222222;
+}
+
+.tiptap ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75em;
+}
+
+.tiptap ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75em;
+}
+
+.tiptap blockquote {
+  border-left: 3px solid #1a6fa8;
+  padding-left: 0.75rem;
+  color: #666666;
+  margin-bottom: 0.75em;
+  font-style: italic;
+}
+
+.tiptap pre {
+  background: #f5f5f5;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 0.75em;
+  overflow-x: auto;
+  border: 1px solid #dddddd;
+}
+
+.tiptap code {
+  background: #f5f5f5;
+  padding: 0.15rem 0.3rem;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  border: 1px solid #e0e0e0;
+}
+
+/* Custom prose formatting class for displaying notes */
+.technique-prose p {
+  margin-bottom: 1em;
+  line-height: 1.8;
+  color: #444444;
+}
+
+.technique-prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.technique-prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.technique-prose li {
+  margin-bottom: 0.5em;
+  color: #444444;
+  line-height: 1.6;
+}
+
+.technique-prose a {
+  color: #1a6fa8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.technique-prose a:hover {
+  color: #0d4f7a;
+  text-decoration: underline;
+}
+
+.technique-prose code {
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  border: 1px solid #dddddd;
+}
+
+.technique-prose pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-bottom: 1em;
+  border: 1px solid #dddddd;
+}
+
+.technique-prose strong {
+  font-weight: 600;
+  color: #222222;
+}
+
+.technique-prose blockquote {
+  border-left: 4px solid #1a6fa8;
+  padding-left: 1rem;
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 1em;
+}
